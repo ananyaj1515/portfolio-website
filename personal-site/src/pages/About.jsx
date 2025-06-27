@@ -14,7 +14,7 @@ const About = () => {
       }}
     >
       <div className="p-10 pt-20 max-w-5xl w-full min-h-screen bg-[#1a1c2c] text-white">
-        <h1 className="text-2xl font-bold">
+        <h1 className="subhead-text font-bold">
           Hello, I am{' '}
           <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
             Ananya
@@ -27,16 +27,16 @@ const About = () => {
         </p>
 
         <div className="py-10 flex flex-col">
-          <h3 className="subhead-text">My Skills:</h3>
+          <h3 className="text-xl font-bold">My Skills:</h3>
         </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full">
            {[
   { name: "Frontend", gradient: "from-purple-600", bg: "bg-purple-600" },
   { name: "Backend", gradient: "from-blue-600", bg: "bg-blue-600" },
   { name: "AI", gradient: "from-pink-600", bg: "bg-pink-600" },
-  { name: "Database", gradient: "from-purple-300", bg: "bg-purple-300" },
-  { name: "Language", gradient: "from-blue-300", bg: "bg-blue-300" },
-  { name: "Software", gradient: "from-pink-300", bg: "bg-pink-300" },
+  { name: "Database", gradient: "from-blue-400", bg: "bg-blue-400" },
+  { name: "Language", gradient: "from-pink-400", bg: "bg-pink-400" },
+  { name: "Software", gradient: "from-purple-400", bg: "bg-purple-400" },
   { name: "Version Control", gradient: "from-green-100", bg: "bg-green-100" },
 ].map((type) => (
   <div key={type.name}>
@@ -49,7 +49,7 @@ const About = () => {
         .map((skill) => (
           <div
             key={skill.name}
-            className={`w-20 h-20 border border-white btn-front bg-blue-300 bg-opacity-15 rounded-xl flex justify-center items-center shadow-lg`}
+            className={`w-20 h-20 border border-white btn-front bg-blue-300 bg-opacity-35 rounded-xl flex justify-center items-center shadow-lg`}
            
           >
             <img
