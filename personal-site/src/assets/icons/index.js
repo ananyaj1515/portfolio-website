@@ -19,6 +19,7 @@ import ollama from './ollama.svg'
 import three from './three.svg'
 import vue from './vue.svg'
 import langchain from './langchain.svg'
+import gsap from './gsap.svg'
 
 export {
     blender,
@@ -41,5 +42,6 @@ export {
     ollama,
     three,
     vue,
-    langchain
+    langchain,
+    gsap
 }

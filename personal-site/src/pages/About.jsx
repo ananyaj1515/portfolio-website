@@ -28,19 +28,44 @@ const About = () => {
 
         <div className="py-10 flex flex-col">
           <h3 className="subhead-text">My Skills:</h3>
-        <div className="pl-10 mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 w-full">
-            {skills.map((skill) => (
-                <div className='block-container w-20 h-20'>
-                    <div className='btn-front bg-blue-300 bg-opacity-15 rounded-xl flex justify-center items-center'>
-                        <img
-                            src={skill.imageUrl}
-                            alt={skill.name}
-                            className="w-12 h-12 object-contain"/>
-                    </div>
-                </div>
-            ))}
-          </div>
         </div>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full">
+           {[
+  { name: "Frontend", color: "bg-purple-600" },
+  { name: "Backend", color: "bg-blue-600" },
+  { name: "AI", color: "bg-pink-600" },
+  { name: "Database", color: "bg-purple-300" },
+  { name: "Language", color: "bg-blue-300" },
+  { name: "Software", color: "bg-pink-300" },
+  { name: "Version Control", color: "bg-green-100" },
+].map((type) => (
+  <div key={type.name}>
+    <h2 className={`text-xl font-semibold mb-4 capitalize text-white`}>
+      {type.name}
+    </h2>
+    <div className={`p-3 grid grid-cols-3 gap-4 ${type.color} bg-opacity-50 rounded-xl`}  style={{
+              boxShadow: '0 0 10px #ffffff',
+            }}>
+      {skills
+        .filter((skill) => skill.type === type.name)
+        .map((skill) => (
+          <div
+            key={skill.name}
+            className={`w-20 h-20 btn-front bg-blue-300 bg-opacity-15 rounded-xl flex justify-center items-center shadow-lg`}
+           
+          >
+            <img
+              src={skill.imageUrl}
+              alt={skill.name}
+              className="w-12 h-12 object-contain"
+            />
+          </div>
+        ))}
+    </div>
+  </div>
+))}
+
+          </div>
       </div>
     </section>
   );

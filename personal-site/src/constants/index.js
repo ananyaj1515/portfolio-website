@@ -19,7 +19,8 @@ import {
     ollama,
     three,
     vue,
-    langchain
+    langchain,
+    gsap
 } from '../assets/icons'
 
 export const skills = [
@@ -127,5 +128,10 @@ export const skills = [
         imageUrl: langchain,
         name: "Langchain",
         type: "AI"
+    },
+    {
+        imageUrl: gsap,
+        name: "GSAP",
+        type: "Frontend"
     }
 ]

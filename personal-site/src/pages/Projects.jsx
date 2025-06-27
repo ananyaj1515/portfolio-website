@@ -20,7 +20,7 @@ const Projects = () => {
                </h1>
        
                <p className="mt-4">
-                 Some creative endeavours of mine that I partook in during my free time. Making each of these has taught me some new skill I didn't know before so I hold these close to my heart. Hope you like them ☺️
+                Some creative endeavours of mine! 
                </p>
              </div>
         </section>
